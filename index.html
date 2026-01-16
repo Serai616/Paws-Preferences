@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <title>Paws & Preferences: Find Your Favourite Kitty</title>
 
@@ -9,13 +10,28 @@
     </head>
     <body>
         <header>
-
+            <h1>Paws & Preferences</h1>
+            <p>Find Your Favourite Kitty</p>
         </header>
         <main>
-            
+            <div id="card-deck">
+                <div class="card" id="front-card">
+
+                </div>
+                <div class="card" id="back-card">
+
+                </div>
+            </div>
+            <div id="results" style="display:none;">
+                <h2 style="text-align: center;">You liked <span id="liked-num">these</span> cats!</h2>
+                <h4 style="text-align: center;">Here are your favourites:</h2>
+                <div id="liked-cats" class="liked-cats-container"></div>
+            </div>
         </main>
         <footer>
+            <p>👎 Swipe Left or Swipe Right 👍</p>
 
+            <script src="script.js"></script>
         </footer>
     </body>
 </html>
